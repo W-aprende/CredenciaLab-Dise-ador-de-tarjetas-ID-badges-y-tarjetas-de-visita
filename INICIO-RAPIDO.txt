@@ -1,0 +1,68 @@
+════════════════════════════════════════════════════════════════════
+  CREDENCIALAB · DISEÑADOR DE TARJETAS ID, BADGES Y TARJETAS DE VISITA
+  GUÍA DE INICIO RÁPIDO (léeme primero)
+════════════════════════════════════════════════════════════════════
+
+  ┌─────────────────────────────────────────────────────────────┐
+  │  RESUMEN EN 3 PASOS                                         │
+  │                                                             │
+  │  1. Instala Node.js (versión LTS) desde https://nodejs.org  │
+  │  2. Doble clic en  iniciar-windows.bat  (Windows)           │
+  │     o abre una terminal y ejecuta:                          │
+  │       bash iniciar-linux-mac.sh        (Linux / macOS)      │
+  │  3. Se abrirá  http://localhost:3000  en tu navegador.      │
+  │     ¡Ya puedes diseñar tus tarjetas!                        │
+  └─────────────────────────────────────────────────────────────┘
+
+  La PRIMERA vez el arranque tarda unos minutos (instala las
+  dependencias). Necesita internet SOLO para esa primera
+  instalación; después funciona 100 % SIN CONEXIÓN.
+
+────────────────────────────────────────────────────────────────────
+ ¿QUÉ ARCHIVOS SON?
+────────────────────────────────────────────────────────────────────
+  iniciar-windows.bat ........ Arranque automático en Windows
+  iniciar-linux-mac.sh ....... Arranque automático en Linux/macOS
+  README.md .................. Guía COMPLETA (leer para más detalle)
+  package.json ............... Definición del proyecto y comandos
+  src/ ....................... Código fuente de la aplicación
+  public/ .................... Recursos estáticos
+
+────────────────────────────────────────────────────────────────────
+ COMANDOS MANUALES (alternativa a los lanzadores)
+────────────────────────────────────────────────────────────────────
+  Dentro de la carpeta del proyecto:
+
+  npm install          → instalar dependencias (solo la 1.ª vez)
+  npm run dev          → modo desarrollo: http://localhost:3000
+  npm run build        → compilar versión de producción
+  npm start            → servir la versión compilada (tras build)
+
+  Puerto ocupado? Arranca en otro puerto:
+    Windows:   set PORT=3001 && npm run dev
+    Linux/Mac: PORT=3001 npm run dev
+  (o edita el número 3000 en package.json)
+
+────────────────────────────────────────────────────────────────────
+ ¿QUÉ FUNCIONA SIN INTERNET?
+────────────────────────────────────────────────────────────────────
+  ✔ Todo el editor: plantillas, paletas, patrones, tipografías,
+    fotos locales, códigos QR, hologramas, exportación PNG/JPEG/PDF.
+  ✔ El servidor: es local (tu propio ordenador), no usa la nube.
+  ✘ Solo requiere internet la PRIMERA VEZ para `npm install`
+    (descarga las librerías desde npmjs.com).
+
+────────────────────────────────────────────────────────────────────
+ PROBLEMAS FRECUENTES
+────────────────────────────────────────────────────────────────────
+  · "node no se reconoce como comando" → instala Node.js y reinicia
+    el ordenador antes de volver a intentarlo.
+  · La página tarda en cargar la primera vez → normal: el servidor
+    compila la aplicación al vuelo (10–40 s).
+  · No abre el navegador automáticamente → abre manualmente
+    http://localhost:3000
+  · Error EADDRINUSE → el puerto 3000 está ocupado por otro
+    programa; usa otro puerto (ver arriba).
+
+  Documentación completa en README.md
+════════════════════════════════════════════════════════════════════
